@@ -33,6 +33,7 @@ const Wrap = styled.div`
     justify-content: space-between;
     border-bottom: 1px solid #dddddd;
     position: fixed;
+    z-index: 2;
 `
 
 const ServiceIcon = styled.img`

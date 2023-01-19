@@ -15,7 +15,7 @@ export const request = axios.create({
 
 request.interceptors.request.use(
 	config => {
-		// if (process.env.NODE_ENV === 'development') console.log('요청: ', config)
+		if (process.env.NODE_ENV === 'development') console.log('요청: ', config)
 		return config;
 	},
 	error => {},
@@ -23,7 +23,7 @@ request.interceptors.request.use(
 
 request.interceptors.response.use(
 	async response => {
-		// if (process.env.NODE_ENV === 'development') console.log('응답: ', response)
+		if (process.env.NODE_ENV === 'development') console.log('응답: ', response)
 
 		return response
 	},

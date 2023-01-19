@@ -28,7 +28,7 @@ const Wrap = styled.div`
     max-width: 500px;
     display: flex;
     flex-direction: column;
-    padding: 70px 0px 0px 30px;
+    padding: 70px 0px 0px 245px;
 `
 
 const Category = styled.span`

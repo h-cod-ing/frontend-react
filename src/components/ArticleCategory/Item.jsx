@@ -2,12 +2,12 @@ import styled from 'styled-components'
 import './styles.module.css';
 
 export default function ArticleCategory({v, articleName}) {
-    console.log(v)
+    console.log(articleName)
     return (
     <>
             {
                 v.map((vx,i) => 
-                    <Container>
+                    <Container key={vx}>
                     {
                         typeof vx !== "string" ? <ArticleCategory v={vx} /> : vx === articleName ? <SelectedWrap key={i}>{vx}</SelectedWrap> : <NonSelectedWrap key={i}>{vx}</NonSelectedWrap>
                     }
@@ -26,7 +26,7 @@ const SelectedWrap = styled.div`
     color: #EF306A;
     border: 1.5px solid #EF306A;
     font-size: 13px;
-    width: 130px;
+    width: 150px;
 `
 
 const NonSelectedWrap = styled.div`
