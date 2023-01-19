@@ -54,3 +54,14 @@ blockquote:before {
 blockquote > p {
     color: #c32655;
 }
+
+li::marker {
+    color: #c32655;
+    font-size: 0.9em;
+    font-weight: bold;
+}
+
+li {
+    font-size: 0.85em;
+    line-height: 2em;
+}
