@@ -19,7 +19,7 @@ export default function Article() {
         <>
             <Header/>
             <Wrap>
-                <ArticleCategory v={apiData.category} articleName={'Typescript 강좌'}/>
+                <ArticleCategory index={1} v={apiData.category} articleName={'2'}/>
                 <ArticleView category={'Typescript'} title={'Oein과 함께하는 Typescript 강좌'} article={apiData.article}/>
             </Wrap>
         </>

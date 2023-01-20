@@ -1,15 +1,14 @@
 import styled from 'styled-components'
 import './styles.module.css';
 
-export default function ArticleCategory({v, articleName}) {
-    console.log(articleName)
+export default function ArticleCategory({index, v, articleName}) {
     return (
     <>
             {
                 v.map((vx,i) => 
                     <Container key={vx}>
                     {
-                        typeof vx !== "string" ? <ArticleCategory v={vx} /> : vx === articleName ? <SelectedWrap key={i}>{vx}</SelectedWrap> : <NonSelectedWrap key={i}>{vx}</NonSelectedWrap>
+                        typeof vx !== "string" ? <ArticleCategory index={index + 1} v={vx} articleName={articleName} /> : vx === articleName ? <SelectedWrap index={index} key={i}>{vx}</SelectedWrap> : <NonSelectedWrap key={i}>{vx}</NonSelectedWrap>
                     }
                     </Container>
 
@@ -20,20 +19,20 @@ export default function ArticleCategory({v, articleName}) {
 }
 
 const SelectedWrap = styled.div`
-    background-color: rgb(239, 48, 106, .2);
-    border-radius: 5px;
-    padding: 5px 0px 5px 15px;
+    background-color: rgb(239, 48, 106, .15);
+    border-radius: 8px;
+    padding: 9px 0px 9px 15px;
     color: #EF306A;
-    border: 1.5px solid #EF306A;
-    font-size: 13px;
-    width: 150px;
+    font-size: 1rem;
+    width: ${(props) => props.index === 2 ? '170px' : '160px'};
+    font-weight: bold;
 `
 
 const NonSelectedWrap = styled.div`
-    padding: 5px 0px 5px 15px;
+    padding: 6px 0px 6px 18px;
     color: #989898;
-    font-size: 13px;
-    width: 130px;
+    font-size: 1.125rem;
+    width: 150px;
 
     :hover {
         cursor: pointer;
@@ -41,5 +40,5 @@ const NonSelectedWrap = styled.div`
 `
 
 const Container = styled.div`
-    margin: 3px 0px 3px 10px;
+    margin: 3px 0px 3px 20px;
 `

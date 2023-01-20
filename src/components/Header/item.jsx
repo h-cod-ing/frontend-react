@@ -9,8 +9,8 @@ export default function HeaderListItem({text, href}) {
 }
 
 const ListItem = styled.a`
-    font-size: 14px;
-    color: #8b8b8b;
+    font-size: 1.1rem;
+    color: #917979;
     margin-right: 20px;
     text-decoration-line: none;
     /* font-weight: 500; */

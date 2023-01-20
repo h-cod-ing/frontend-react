@@ -25,33 +25,34 @@ export default function ArticleView({category, title, article}) {
 
 const Wrap = styled.div`
     width: 100%;
-    max-width: 500px;
+    max-width: 560px;
     display: flex;
     flex-direction: column;
-    padding: 70px 0px 0px 245px;
+    padding: 85px 0px 0px 280px;
 `
 
 const Category = styled.span`
     background-color: var(--service-color);
     color: #fff;
-    padding: 3px 8px 5px 8px;
+    padding: 4px 15px 4px 15px;
     width: fit-content;
-    font-size: 10px;
-    border-radius: 7px;
+    font-size: 1rem;
+    border-radius: 100px;
+    font-weight: bold;
 `
 
 const Time = styled.span`
     background-color: #ededed;
     color: #3b3b3b;
-    padding: 3px 8px 5px 8px;
     width: fit-content;
-    font-size: 10px;
-    border-radius: 7px;
+    padding: 4px 15px 4px 15px;
+    font-size: 1rem;
+    border-radius: 100px;
     margin-left: 8px;
 `
 
 const Title = styled.span`
-    font-size: 28px;
+    font-size: 2.5rem;
     font-weight: bold;
-    margin: 7px 0px 15px 0px;
+    margin: 14px 0px 15px 0px;
 `

@@ -36,16 +36,20 @@ const Wrap = styled.div`
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+
+    :hover {
+        cursor: pointer;
+    }
 `
 
 const Title = styled.span`
     font-weight: bold;
     color: #fff;
-    font-size: 15px;
+    font-size: 1.125rem;
 `
 
 const NextArticleTitle = styled.span`
     color: #fff;
-    font-size: 12px;
+    font-size: 0.9rem;
     margin-top: 2px;
 `

@@ -26,18 +26,18 @@ export default function Home() {
 
 const Wrap = styled.div`
     width: 100%;
-    height: 48px;
+    height: 3.8rem;
     background-color: #fff;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border-bottom: 1px solid #dddddd;
+    border-bottom: 1px solid #ececec;
     position: fixed;
     z-index: 2;
 `
 
 const ServiceIcon = styled.img`
-    width: 35px;
-    height: 35px;
+    width: 2.8rem;
+    height: 2.8rem;
     margin: 0px 30px 0px 20px;
 `
